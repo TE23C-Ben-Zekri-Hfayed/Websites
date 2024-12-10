@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Iceland&family=Maiden+Orange&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Iceland&family=Maiden+Orange&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+    overflow: hidden; /* Initially hide the scrollbar */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#mainpage{
+    background-image: url(./pics/Untitled\ design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainpagehead {
+    background-color: #1f2020;
+    position: absolute;
+    bottom: 0px; /* Starting point of the animation */
+    right: 440px;
+    height: 500px;
+    width: 700px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Translucent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    backdrop-filter: blur(50px); /* Glass effect */
+    text-align: center;
+    color: white;
+    animation: slideUp 1.5s ease-out forwards; /* Animation added here */
+}
+
+@keyframes slideUp {
+    from {
+        bottom: -500px; /* Start from below the screen */
+        opacity: 0; /* Start as invisible */
+    }
+    to {
+        bottom: 0; /* End at the designated position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+h2 {
+    color: #d9d9d9;
+    font-family: "Genos", sans-serif;
+    font-size: 30px;
+    margin: 1px;
+    text-shadow: 2px 2px #1d1d1d;
+}
+
+p {
+    font-size: 30px;
+    position: absolute;
+    right: 41px;
+    bottom: 300px;
+    text-shadow: 2px 2px #1d1d1d;
+}
+
+h3 { 
+    font-size: 30px;
+    text-shadow: 2px 2px #1d1d1d;
+    margin-left: 468px;
+}
+
+h4 {
+    font-size: 30px;
+    text-shadow: 2px 2px #1d1d1d;
+    margin-top: -68px;
+    margin-left: -380px;
+}
+
+h5{
+    font-size: 30px;
+    text-shadow: 4px 4px #1d1d1d;
+    margin-top: 345px;
+    
+
+}
+
+h6{
+    font-size: 20px;
+    text-shadow: 4px 4px #1d1d1d;
+    margin-top: -115.5px;
+    margin-left: 0px;
+}
+
+ul {
+    list-style-position: inside; /* Ensures markers stay aligned */
+    position: absolute;
+    left: -20px;
+    bottom: 250px;
+    font-size: 22px;
+    display: table;
+}
+
+li {
+    margin: 10px; /* Removes margin between list items */
+    padding: 0; /* Removes extra padding */
+    overflow: hidden; /* Prevents text overflow */
+    text-shadow: 2px 2px #1d1d1d;
+}
+
+
+#introduction{
+    background-image: url(./pics/introduction.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Keyframes to slide in from the right */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);  /* Starts from the right */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Ends at its original position */
+        opacity: 1;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 50px;
+    color: #D5F2E3;
+    position: absolute;
+    right: 500px;
+    bottom: 635px;
+    text-shadow: 5px 2px #770202;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 680px;
+}
+
+button {
+    background-color: #222423;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow: 2px 2px #000;
+    font-family: "Genos", sans-serif;
+    margin-left: 300px;
+    margin-bottom: -10px;
+}
+
+button:hover {
+    background-color: #1f2020;
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mainpageintro{
+    h2 {
+        font-family: "Funnel Sans", sans-serif;
+        font-size: 30px;
+        color: #D5F2E3;
+        position: absolute;
+        left: 80px;
+        bottom: 500px;
+        text-shadow: 5px 2px #1d1d1d;
+        animation: slideInFromLeft 1.5s ease-out forwards;
+        opacity: 0; /* Ensure it's hidden before animation starts */
+    }
+    
+    p {
+        font-family: "Genos", sans-serif;
+        font-size: 22px;
+        color: #D5F2E3;
+        text-shadow: 5px 2px #1d1d1d;
+        margin: 10px; /* Adjust margin for spacing */
+        line-height: 1.6; /* Improve readability */
+        max-width: 600px; /* Limit paragraph width */
+        position: absolute;
+        bottom: 150px;
+        left: 70px;
+        animation: slideInFromLeft 2s ease-out 0.5s forwards; /* Delayed for better sequence */
+        opacity: 0; /* Ensure it's hidden before animation starts */
+    }
+
+
+}
